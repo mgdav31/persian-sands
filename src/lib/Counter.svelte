@@ -7,7 +7,7 @@
   }
 
    onMount(()=> {
-         console.log (executeAndTime(hello));
+         console.log(executeAndTime(hello));
     })
 
   let count = 0
