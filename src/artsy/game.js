@@ -7,17 +7,17 @@
  * Global game parameters for the primary canvas.
  * COPIED FROM canvasConfig.js
  */ 
-export const __max_width = 560;
-export const __max_height = 480;
+const __max_width = 560;
+const __max_height = 480;
 
 /* Need to use a smaller size when on mobile devices with small screens */
-export const width = Math.min(__max_width, Math.max(screen.width - 6, 1));
-export const height = Math.min(__max_height, Math.max(screen.height - 200, 100));
+const width = Math.min(__max_width, Math.max(screen.width - 6, 1));
+const height = Math.min(__max_height, Math.max(screen.height - 200, 100));
 
-export const MAX_FPS = 120;
-export const DEFAULT_FPS = 60;
+const MAX_FPS = 120;
+const DEFAULT_FPS = 60;
 
-export const MAX_NUM_PARTICLES = 1000;
+const MAX_NUM_PARTICLES = 1000;
 
 /* Scaling due to device pixel ratio */
 const onscreenPixelRatio = window.devicePixelRatio;
@@ -63,7 +63,7 @@ const refreshTimes = [];
 
 /* ========================================================================= */
 
-export function init() {
+function init() {
   var gameWrapper = document.getElementById("gameWrapper");
   gameWrapper.style.height = height + "px";
   gameWrapper.style.width = width + "px";

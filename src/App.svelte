@@ -4,21 +4,58 @@
   import Canvas from './lib/Canvas.svelte'
 
   
+  const initinit = () => {
+    console.log ("HERE");
+  }
 
-  onMount(()=> {
-         //init();
-    })
+  onMount(() => {
+    initinit();
+  })
+
 
   
 </script>
 
+<svelte:head>
+  <script src="/src/artsy/utils.js"></script>
+  <script src="/src/artsy/game.js"></script>
+  <script src="/src/artsy/cursor.js"></script>
+  <script src="/src/artsy/elements.js"></script>
+  <script src="/src/artsy/particles.js"></script>  
+  <script src="/src/artsy/spigotCombine.js"></script>  
+  <script src="/src/artsy/menu.js"></script>
+</svelte:head>
+
 <main>
   <div id="gameWrapper">
+    <input type="text" id="fps-counter" />
     <Canvas canvasId="mainCanvas"/>
   </div>
 
   <div class="card">
     <Counter />
+    <select id="pensize"></select>
+    <input type="checkbox" id="overwriteCheckbox" />
+    <input type="text" id="speedSlider" />
+    <div id="menuWrapper">
+      <table id="elementTable"></table>
+    </div>
+  </div>
+  <div class="card">
+    <button id="clearButton">Clear</button>
+    <button id="saveButton">Clear</button>
+    <button id="loadButton">Clear</button>
+  </div>
+  <div class="card">
+      <select id="spigot1Type"></select>
+      <select id="spigot2Type"></select>
+      <select id="spigot3Type"></select>
+      <select id="spigot4Type"></select>
+      <select id="spigot1Size"></select>
+      <select id="spigot2Size"></select>
+      <select id="spigot3Size"></select>
+      <select id="spigot4Size"></select>
+
   </div>
 </main>
 
@@ -39,3 +76,4 @@
     color: #888;
   }
 </style>
+

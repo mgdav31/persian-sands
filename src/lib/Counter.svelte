@@ -1,13 +1,12 @@
 <script>
   import {onMount} from 'svelte';
-  import {executeAndTime} from '../artsy/utils';
 
   const hello = () => {
     alert("HELLO WORLD");
   }
 
    onMount(()=> {
-         console.log(executeAndTime(hello));
+         //console.log(executeAndTime(hello));
     })
 
   let count = 0

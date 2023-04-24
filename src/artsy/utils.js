@@ -32,7 +32,7 @@ function random() {
   return r;
 }
 
-export function executeAndTime(func) {
+function executeAndTime(func) {
   const start = performance.now();
   func();
   const end = performance.now();
