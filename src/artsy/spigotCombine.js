@@ -32,8 +32,8 @@ const SPIGOT_ELEMENT_OPTIONS = [
       MAX_SPIGOT_WIDTH
   );
   const SPIGOTS_ENABLED =
-    MAX_SPIGOT_WIDTH * NUM_SPIGOTS <= width && SPIGOT_HEIGHT <= height;
-  
+    //MAX_SPIGOT_WIDTH * NUM_SPIGOTS <= width && SPIGOT_HEIGHT <= height;
+    false;
   function initSpigots() {
     const defaultSize = SPIGOT_SIZE_OPTIONS[DEFAULT_SPIGOT_SIZE_IDX];
     for (var i = 0; i !== NUM_SPIGOTS; i++) {

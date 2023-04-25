@@ -33,7 +33,6 @@
   </div>
 
   <div class="card">
-    <Counter />
     <select id="pensize"></select>
     <input type="checkbox" id="overwriteCheckbox" />
     <input type="text" id="speedSlider" />
@@ -43,8 +42,8 @@
   </div>
   <div class="card">
     <button id="clearButton">Clear</button>
-    <button id="saveButton">Clear</button>
-    <button id="loadButton">Clear</button>
+    <button id="saveButton">Save</button>
+    <button id="loadButton">Load</button>
   </div>
   <div class="card">
       <select id="spigot1Type"></select>
