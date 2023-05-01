@@ -1,4 +1,6 @@
 /*
+ * ALWAY REMEMBER THE PPP: THE PRICE WE PAY FOR PERFORMANCE
+ *
  * Returns a pre-generated random byte between 0-99.
  * This is especially important for hot-paths that
  * can't tolerate the time to call Math.random() directly
