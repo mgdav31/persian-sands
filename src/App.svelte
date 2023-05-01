@@ -2,22 +2,27 @@
   import {onMount} from 'svelte';  
   import Counter from './lib/Counter.svelte'
   import Canvas from './lib/Canvas.svelte'
+  import {HALF_PI} from './tools/constants'
+  import {Random} from './tools/utils'
 
+
+  const randy = new Random(16384)
   
   const initinit = () => {
-    console.log ("HERE");
+    console.log (randy.rand_ints);
+    console.log (randy.random());
+    console.log (HALF_PI);
   }
+  
 
   onMount(() => {
     initinit();
   })
 
-
-  
 </script>
 
 <svelte:head>
-  <script src="/src/artsy/utils.js"></script>
+  <!--<script src="/src/artsy/utils.js"></script>-->
   <script src="/src/artsy/game.js"></script>
   <script src="/src/artsy/cursor.js"></script>
   <script src="/src/artsy/elements.js"></script>
