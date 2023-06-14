@@ -1,3 +1,5 @@
+import { derived } from "svelte/store";
+
 /*
  * ALWAY REMEMBER THE PPP: THE PRICE WE PAY FOR PERFORMANCE
  *
@@ -21,4 +23,24 @@ export class Random {
             this.next_int = 0;
         return r;
     }
+}
+
+export class PRColor {
+    constructor(color, opacity=1.0) {
+        this.color = color;
+        this.opacity = opacity
+    }
+}
+
+export function deriveObject (obj) {
+	const keys = Object.keys(obj);
+	const list = keys.map(key => {
+		return obj[key];
+	});
+	return derived(list, (array) => {
+		return array.reduce((dict, value, i) => {
+			dict[keys[i]] = value;
+			return dict;
+		}, {});
+	});
 }
