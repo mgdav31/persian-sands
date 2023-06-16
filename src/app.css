@@ -13,7 +13,8 @@
   -webkit-text-size-adjust: 100%;
 
   --color-primary: #101616;
-  --color-secondary: #4f6b6b;
+  --color-secondary: #799c9c;
+  --color-tertiary: #202c2c;
   --color-light: #f6f6f6;
 }
 
@@ -37,6 +38,46 @@ body {
 .fw-bold {
   font-weight: bold;
 }
+
+.p-small {
+  padding: 8px 8px;
+}
+
+
+.border1 {
+  border-width: 3px;
+  border-style: solid;
+}
+
+.border1-top {
+  border-width: 3px;
+  border-top-style: solid;
+}
+
+.border1-right {
+  border-width: 3px;
+  border-right-style: solid;
+}
+
+.border1-bottom {
+  border-width: 3px;
+  border-bottom-style: solid;
+}
+
+.border1-left {
+  border-width: 3px;
+  border-left-style: solid;
+}
+
+
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
 
 /*
     Utility
